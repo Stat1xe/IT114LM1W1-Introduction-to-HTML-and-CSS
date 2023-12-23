@@ -8,25 +8,34 @@
 <body>
     <h1>HTML Form Example</h1>
     <!-- TODO 2.1: Add the container for the form. It should POST to "/submit_form"  -->
-    
-        <!-- TODO 2.2: Add a first name text field -->
-
-        <!-- TODO 2.3: Add a last name text field. The field must be required. -->
-
-        <!-- TODO 2.4: Add an email text field. The field must be read only. -->
-
-        <!-- TODO 2.5: Add an address text field. The field must be disabled. -->
-
-        <!-- TODO 2.6: Add a year level dropdown. The inital selected value must be "Select an option", but it must not be a valid selection. -->
-
-        <!-- TODO 2.7: Add radio buttons that ask which learning mode the user prefers -->
-
-        <!-- TODO 2.8: Add check boxes that ask which subjects the user has taken -->
-       
-        <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
-
-        <!-- TODO 2.10: Add a submit button -->
-
+    <link>form</link> action="<link>/submit_form</link>" method="post">
+    <!-- TODO 2.2: Add a first name text field -->
+    <link>input</link> type="text" name="first_name" placeholder="First Name" />
+    <!-- TODO 2.3: Add a last name text field. The field must be required. -->
+    <link>input</link> type="text" name="last_name" placeholder="Last Name" required />
+    <!-- TODO 2.4: Add an email text field. The field must be read only. -->
+    <link>input</link> type="email" name="email" placeholder="Email" readonly />
+    <!-- TODO 2.5: Add an address text field. The field must be disabled. -->
+    <link>input</link> type="text" name="address" placeholder="Address" disabled />
+    <!-- TODO 2.6: Add a year level dropdown. The inital selected value must be "Select an option", but it must not be a valid selection. -->
+    <link>select</link> name="year_level">
+       <link>option</link> disabled selected>Select an option</link>option>
+       <link>option</link> value="1">First Year</link>option>
+       <link>option</link> value="2">Second Year</link>option>
+       <link>option</link> value="3">Third Year</link>option>
+       <link>option</link> value="4">Fourth Year</link>option>
+    </link>select>
+    <!-- TODO 2.7: Add radio buttons that ask which learning mode the user prefers -->
+    <link>input</link> type="radio" name="learning_mode" value="online" /> Online
+    <link>input</link> type="radio" name="learning_mode" value="in_person" /> In Person
+    <!-- TODO 2.8: Add check boxes that ask which subjects the user has taken -->
+    <link>input</link> type="checkbox" name="subject" value="CS" /> Computer Science
+    <link>input</link> type="checkbox" name="subject" value="IT" /> Information Technology
+    <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
+    <link>textarea</link> name="preference" placeholder="Would you prefer to be a cactus or a shark?"></link>textarea>
+    <!-- TODO 2.10: Add a submit button -->
+    <link>input</link> type="submit" value="Submit" />
+    </link>form>
 </body>
 
 </html>
